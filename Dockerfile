@@ -18,7 +18,7 @@ RUN ./configure
 RUN make
 RUN make install
 
-EXPOSE 4921
-EXPOSE 14921
+EXPOSE 4921 14921
+EXPOSE 4922 14922
 
-CMD ["techroadcoin", "--printtoconsole"]
+CMD ["techroadcoind", "--printtoconsole"]
