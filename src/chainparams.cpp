@@ -125,11 +125,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x8153858645254cff61b4e1a5e255258a5d395733df89fc511817db6568c22755"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("seed-a.techroadcoin.loshan.co.uk");
-        vSeeds.emplace_back("dnsseed.thrasher.io");
-        vSeeds.emplace_back("dnsseed.techroadcointools.com");
-        vSeeds.emplace_back("dnsseed.techroadcoinpool.org");
-        vSeeds.emplace_back("dnsseed.koin-project.com");
+        vSeeds.emplace_back("seed1.techroadcoin.chaineers.io");
+        vSeeds.emplace_back("seed2.techroadcoin.chaineers.io");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -141,8 +138,6 @@ public:
         bech32_hrp = "trc";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
-        vFixedSeeds.clear();
-        vSeeds.clear();
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -219,9 +214,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.techroadcointools.com");
-        vSeeds.emplace_back("seed-b.techroadcoin.loshan.co.uk");
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
+        vSeeds.emplace_back("testnet-seed.techroadcoin.chaineers.io");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,127);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -233,8 +226,6 @@ public:
         bech32_hrp = "ttrc";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
-        vFixedSeeds.clear();
-        vSeeds.clear();
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
